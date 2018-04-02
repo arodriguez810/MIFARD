@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "907161048829",
+    "firebase_url": "https://mifard-4b7ad.firebaseio.com",
+    "project_id": "mifard-4b7ad",
+    "storage_bucket": "mifard-4b7ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907161048829:android:9a5ddabad9458f76",
+        "android_client_info": {
+          "package_name": "io.ionic.fard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907161048829-1120vna1ts5ru24k6rbc14hn1r3nlva0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoAF3SLK7SZP8baCXWqJpktYOiC4nbY10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

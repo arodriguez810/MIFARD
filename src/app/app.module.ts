@@ -1,18 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import {BrowserModule} from '@angular/platform-browser';
+import {ErrorHandler, NgModule} from '@angular/core';
+import {IonicApp, IonicErrorHandler, IonicModule} from 'ionic-angular';
+import {SplashScreen} from '@ionic-native/splash-screen';
+import {StatusBar} from '@ionic-native/status-bar';
+import {InAppBrowser} from '@ionic-native/in-app-browser';
+import {MyApp} from './app.component';
+import {HomePage} from '../pages/home/home';
+// import {CloudSettings, CloudModule} from '@ionic/cloud-angular';
 
-const cloudSettings: CloudSettings = {
-  'core': {
-    'app_id': 'b5b70cfa'
-  }
-};
+// const cloudSettings: CloudSettings = {
+//   'core': {
+//     'app_id': 'b5b70cfa'
+//   },
+//   push: {
+//     sender_id: '907161048829',
+//     pluginConfig: {
+//       ios: {
+//         badge: true,
+//         sound: true
+//       },
+//       android: {
+//         iconColor: '#343434',
+//         forceShow: true
+//       }
+//     }
+//   }
+// };
 
 
 @NgModule({
@@ -22,8 +35,8 @@ const cloudSettings: CloudSettings = {
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    CloudModule.forRoot(cloudSettings)
+    IonicModule.forRoot(MyApp)
+    // CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -33,8 +46,9 @@ const cloudSettings: CloudSettings = {
   providers: [
     StatusBar,
     SplashScreen,
-	InAppBrowser,
+    InAppBrowser,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+export class AppModule {
+}
