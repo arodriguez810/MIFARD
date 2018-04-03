@@ -6,27 +6,8 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {InAppBrowser} from '@ionic-native/in-app-browser';
 import {MyApp} from './app.component';
 import {HomePage} from '../pages/home/home';
-// import {CloudSettings, CloudModule} from '@ionic/cloud-angular';
-
-// const cloudSettings: CloudSettings = {
-//   'core': {
-//     'app_id': 'b5b70cfa'
-//   },
-//   push: {
-//     sender_id: '907161048829',
-//     pluginConfig: {
-//       ios: {
-//         badge: true,
-//         sound: true
-//       },
-//       android: {
-//         iconColor: '#343434',
-//         forceShow: true
-//       }
-//     }
-//   }
-// };
-
+import {OneSignal} from '@ionic-native/onesignal';
+import { AlertController } from 'ionic-angular';
 
 @NgModule({
   declarations: [
@@ -47,6 +28,8 @@ import {HomePage} from '../pages/home/home';
     StatusBar,
     SplashScreen,
     InAppBrowser,
+    OneSignal,
+    AlertController,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
